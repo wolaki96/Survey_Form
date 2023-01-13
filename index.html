@@ -10,11 +10,12 @@
 <body>
     <h1 id="title">Survey Form</h1>
     <p id="description">Thank you for filling out this form!</p>
+    <fieldset>
     <form id="survey-form" method="post">
-       <label>Name <input id="name" type="text" required></label> 
-        <label>Email <input id="email" type="email" required></label> 
-        <label>Age (optional) <input id="age" type="number"></label> 
-        <label>Which animal best suits you? 
+       <label for="name">Name <input id="name" type="text" required></label> 
+        <label for="email">Email <input id="email" type="email" required></label> 
+        <label for="number">Age (optional) <input id="number" type="number" name="number" min="10" max="99" /></label> 
+        <label for="animal">Which animal best suits you? 
             <select id="animal" name="animal">
                 <option value="">(Select One)</option>
                 <option value="1">Penguin</option>
@@ -27,5 +28,6 @@
             </select>
         </label> 
     </form>
+</fieldset>
 </body>
 </html>
