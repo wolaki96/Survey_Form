@@ -34,17 +34,22 @@
         <label for="orange"><input id="orange" type="radio" name="color" class="inline" /> Orange</label>
         Choose the emotions that you are going through right now:
         <label for="checkbox">
-            <input id="checkbox" type="checkbox" required name="happy" class="inline" /> Happy
-            <input id="checkbox" type="checkbox" required name="angry" class="inline" /> Angry
-            <input id="checkbox" type="checkbox" required name="sad" class="inline" /> Sad
-            <input id="checkbox" type="checkbox" required name="ecstatic" class="inline" /> Ecstatic
-            <input id="checkbox" type="checkbox" required name="sorrow" class="inline" /> Sorrow
-            <input id="checkbox" type="checkbox" required name="bliss" class="inline" /> Bliss
-            <input id="checkbox" type="checkbox" required name="envy" class="inline" /> Envy
-            <input id="checkbox" type="checkbox" required name="bored" class="inline" /> Bored
+            <input id="checkbox" type="checkbox" name="happy" value="happy" class="inline" /> Happy
+            <input id="checkbox" type="checkbox"  name="angry" class="inline" value="angry" /> Angry
+            <input id="checkbox" type="checkbox"  name="sad" class="inline" value="sad"/> Sad
+            <input id="checkbox" type="checkbox"  name="ecstatic" class="inline" value="ecstatic"/> Ecstatic
+            <input id="checkbox" type="checkbox" name="sorrow" class="inline" value="sorrow"/> Sorrow
+            <input id="checkbox" type="checkbox"  name="bliss" class="inline" value="bliss"/> Bliss
+            <input id="checkbox" type="checkbox"  name="envy" class="inline" value="envy"/> Envy
+            <input id="checkbox" type="checkbox" name="bored" class="inline" value="bored"/> Bored
 
           </label>
+          <label for="answer">Explain why you chose the animal, color, and emotions:
+            <textarea id="answer" name="answer" rows="3" cols="30" placeholder="I feel like a caracal because..."></textarea>
+          </label>
+          
     </form>
 </fieldset>
+<input id="submit" type="submit" value="Submit" />
 </body>
 </html>
