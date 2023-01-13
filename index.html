@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
     
     <title>Survey Form</title>
 </head>
@@ -14,9 +14,9 @@
     <div id="container">
     <fieldset>
     <form id="survey-form" method="post">
-       <label for="name">Name <input id="name" type="text" placeholder="Jane" required></label> 
-        <label for="email">Email <input id="email" type="email" placeholder="jane@gmail.com" required></label> 
-        <label for="number">Age (optional) <input id="number" type="number" name="number" min="10" max="99" placeholder="19" /></label> 
+       <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Jane" required></label> 
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="jane@gmail.com" required></label> 
+        <label id="number-label" for="number">Age (optional) <input id="number" type="number" name="number" min="10" max="99" placeholder="19" /></label> 
         <label for="animal">Which animal best suits you? 
             <select id="dropdown" name="animal">
                 <option value="">(Select One)</option>
@@ -30,10 +30,10 @@
             </select>
         </label> 
         Pick a color that best matches how you are feeling:
-        <label for="blue"><input id="blue" type="radio" name="color" class="inline" /> Blue</label>
-        <label for="green"><input id="green" type="radio" name="color" class="inline" /> Green</label>
-        <label for="purple"><input id="purple" type="radio" name="color" class="inline" /> Purple</label>
-        <label for="orange"><input id="orange" type="radio" name="color" class="inline" /> Orange</label>
+        <label for="blue"><input id="blue" type="radio" name="color" class="inline" value="blue" /> Blue</label>
+        <label for="green"><input id="green" type="radio" name="color" class="inline" value="green"/> Green</label>
+        <label for="purple"><input id="purple" type="radio" name="color" class="inline" value="purple"/> Purple</label>
+        <label for="orange"><input id="orange" type="radio" name="color" class="inline" value="orange"/> Orange</label>
         Choose the emotions that you are going through right now:
         <label for="checkbox">
             <input id="checkbox" type="checkbox" name="happy" value="happy" class="inline" /> Happy
@@ -51,10 +51,11 @@
           </label>
           
         
-    
+    <input id="submit" type="submit" value="Submit" />
 </fieldset>
-<input type="submit" value="Submit" />
+
 </form>
+
 </div>
 
 </body>
