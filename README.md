@@ -18,7 +18,7 @@ Simply go to the page and fill out the form for fun! Answers do not go anywhere,
 
 
 
-![screenshot](surveyform.PNG)
+![screenshot](surveyform2.PNG)
     
 
 ## Credits
